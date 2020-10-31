@@ -4,6 +4,7 @@ import AuthenticatedContext from "./AuthenticatedContext";
 import Header from "./components/header/Header.component";
 import Home from "./components/pages/home/Home.component";
 import CreateQuiz from "./components/pages/CreateQuiz/CreateQuiz.component";
+import AnswerQuiz from "./components/pages/answerQuiz/AnswerQuiz.component";
 import MyAnswers from "./components/pages/my-answers/MyAnswers.component";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/create-quiz" component={CreateQuiz} />
           <Route path="/my-answers" component={MyAnswers} />
+          <Route path="/answer-quiz/:id" component={AnswerQuiz} />
         </Router>
       </AuthenticatedContext.Provider>
     </div>

@@ -37,9 +37,10 @@ const CreateQuiz = () => {
   };
 
   const createLink = () => {
+    const base = "localhost:3000/";
+    const route = "answer-quiz/";
     const id = user.user._id;
-    const baseUrl = "answer-quiz/";
-    return <Link to={baseUrl + id}>{baseUrl + id}</Link>;
+    return <Link to={base + route + id}>{base + route + id}</Link>;
   };
 
   const displayQuestions = () => {

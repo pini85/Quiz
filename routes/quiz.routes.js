@@ -29,7 +29,7 @@ module.exports = async (app) => {
     }
   });
 
-  app.put("/api/quiz/my-answers", auth, async (req, res) => {
+  app.patch("/api/quiz/my-answers", auth, async (req, res) => {
     //todo
   });
 
@@ -43,6 +43,22 @@ module.exports = async (app) => {
       res.send(req.user.answers);
     } catch (e) {
       res.status(500).send(e);
+    }
+  });
+
+  // /answer-quiz/api/quiz/answers/5f9d2ffeafa97e6511f340ac
+  app.get("/api/quiz/answers/:id", auth, async (req, res) => {
+    console.log("hiiiii");
+    const id = req.params.id;
+
+    try {
+      const question = await Answers.find({ owner: id });
+      console.log(question);
+
+      res.send(question);
+    } catch (e) {
+      console.log(e);
+      res.status(400).send(e);
     }
   });
   app.post("/api/quiz/answers/:id", auth, async (req, res) => {
