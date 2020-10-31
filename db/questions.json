@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is my favorite food?",
+    "options": [
+      { "option1": "hummus" },
+      { "option2": "falafel" },
+      { "option3": "pizza" },
+      { "option4": "salad" }
+    ]
+  },
+  {
+    "question": "What is my spirit animal?",
+    "options": [
+      { "option1": "lion" },
+      { "option2": "hippo" },
+      { "option3": "monkey" },
+      { "option4": "fox" }
+    ]
+  },
+  {
+    "question": "What is my favorite color?",
+    "options": [
+      { "option1": "blue" },
+      { "option2": "red" },
+      { "option3": "orange" },
+      { "option4": "purple" }
+    ]
+  },
+  {
+    "question": "What is my favorite sport?",
+    "options": [
+      { "option1": "ice hockey" },
+      { "option2": "football" },
+      { "option3": "table tennis" },
+      { "option4": "golf" }
+    ]
+  }
+]
